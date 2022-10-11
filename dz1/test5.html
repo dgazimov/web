@@ -1,0 +1,87 @@
+<html>
+<head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <title>Моя страница</title>
+        <link rel="stylesheet"href="page.css">
+        <script src="script.js"></script>
+
+
+</head>
+
+    <body>
+
+<div class="box">
+
+    <div class="box-content">Динис Газимов</div>
+    <div class="box-about">Обо мне</div>
+    <div class="box-activity">Моя деятельность</div>
+    <div class="box-calculator">Калькулятор</div>
+    <div class="box-difficulties">Сложности</div>
+    <div class="box-mood">Настроение</div>
+    <div class="box-contacts">Контакты</div>
+</div>
+
+    <div class="name">Меня зовут Динис!</div>
+    <div class="about">И я хочу обучиться программированию, потому что мне это жутко интересно!</div>
+    <div class="interest">А еще я люблю послушать музыку и пешие прогулки.</div>
+    <div><img class="mejpg" src="img/me.JPG" alt="Моя фотография"></div>
+
+    <div id="rectangle" style="position: absolute; width: 100%; height: 541px; top: 838px;background: #F3FBFF;"></div>
+    <div class="box2-title">Моя деятельность</div>
+
+    <div class="Rectangle1"></div>
+        <div class="inbox1">1</div>
+        <div class="box-info1">Работаю экономистом</div>
+
+    <div class="Rectangle2"></div>
+        <div class="inbox2">2</div>
+        <div class="box-info2">Обучаюсь программированию</div>
+
+    <div class="Rectangle3"></div>
+        <div class="inbox3">3</div>
+        <div class="box-info3">Учу английский</div>
+
+     <div class="Rectangle4"></div>
+        <div class="inbox4">4</div>
+        <div class="box-info4">Увлекаюсь нумизматикой</div>
+
+    <div class="Rectangle5"></div>
+        <div class="inbox5">5</div>
+        <div class="box-info5">Играю в футбол</div>
+
+<div class="box3-title">Калькулятор</div>
+
+<div class="number1">Введите первое число: <input type="number" id="n1">
+
+<p>Введите второе число: <input type="number" id="n2"></p>
+
+<p>Выберите операцию: <select name="operation"></p>
+    <option value="plus"><button onclick="plus()">Сложение</button></option>
+    <option value="minus"><button onclick="minus()">Вычитание</button></option>
+    </select>
+        <div class="calculate">
+        <button onclick="show()">Вычислить</button> 
+</div>
+</div>
+<div class="mask hidden">
+    <div class="window">
+       <h2>Результат</h2>
+       <hr />
+       <div class="result" id="result">
+          Основная часть
+        </div>
+        <hr />
+        <div class="finish">
+      <button onclick="hide()">Закрыть</button>
+      </div>
+ </div>
+</div>
+</body>
+
+
+</html>
