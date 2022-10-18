@@ -60,27 +60,64 @@
 
 <p>Введите второе число: <input type="number" id="n2"></p>
 
-<p>Выберите операцию: <select name="operation"></p>
-    <option value="plus"><button onclick="plus()">Сложение</button></option>
-    <option value="minus"><button onclick="minus()">Вычитание</button></option>
+<p>Выберите операцию: <select id="operators"></p>
+    <option value="+">Сложение</option>
+    <option value="-">Вычитание</option>
+    <option value="/">Деление</option>
+    <option value="*">Умножение</option>
     </select>
-        <div class="calculate">
-        <button onclick="show()">Вычислить</button> 
+        <div class="calc">
+        <button onclick="calc()">Вычислить</button> 
 </div>
+
 </div>
-<div class="mask hidden">
-    <div class="window">
-       <h2>Результат</h2>
-       <hr />
-       <div class="result" id="result">
-          Основная часть
+
+
+<div class="Rectangle?" style="position: absolute; width: 100%; height: 539px; left: -5px; top: 1854px; background: #F1F9FE;"></div>
+<div class="box4-title">Cложности</div>
+
+<div class="Rectangle10"></div>
+<div class="inboxDifficult">?</div>
+<div class="box-Difficult">Не работал калькулятор</div>
+<div class="Rectangle11"></div>
+<div class="inboxDifficult2">?</div>
+<div class="box-Difficult2">Не выводилось модальное окно</div>
+
+<div class="Rectangle12"></div>
+                <div class="inboxDifficult3">?</div>
+                <div class="box-Difficult3">Не работали цвета</div>
+
+                <div class="Rectangle13"></div>
+                <div class="inboxDifficult4">?</div>
+                <div class="box-Difficult4">Не получалось подключить картинку</div>
+
+                <div class="Rectangle14"></div>
+                <div class="inboxDifficult5">?</div>
+                <div class="box-Difficult5">Не выводился результат вычисления в модальном окне</div>
+
+        <div class="box5-title">Настроение</div>
+                <div><img class="moodpng" src="/web/homework1/img/mood.png" alt="Настроение"></div>
+
+<div class="footer"></div>
+    <div class="footer-content">Динис Газимов</div>
+    <div><a href="https://vk.com/id39228043" target="_blank"><img src="img/vk.png" alt="ВК" class="footerVK" ></a></div>
+    
+    <div class="mask hidden">
+    
+        <div class="window">
+           <h2>Результат</h2>
+           <hr />
+           <p>Ответ:</p>
+           <input type="text" disabled id="result">
+            <hr />
+            <div class="finish">
+          <button onclick="hide()">Закрыть</button>
+          </div>
         </div>
-        <hr />
-        <div class="finish">
-      <button onclick="hide()">Закрыть</button>
-      </div>
- </div>
-</div>
+    </div>
+    
+
+
 </body>
 
 

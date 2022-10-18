@@ -1,6 +1,5 @@
 
 
-
 .box {
     position: absolute;
 width: 100%;
@@ -9,6 +8,7 @@ left: 0px;
 top: 0px;
 
 background: #004C93;
+
 
 }
 .box-content {
@@ -524,9 +524,29 @@ color: #000000;
     
     .finish {
         text-align: right;
-        margin-top: 20px;
         margin-bottom: 20px;
     }
+
+.calc > button {
+    color: #ffffff;
+    border: none;
+    background: #004C93;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 168px;
+    height: 50px;
+}
+
+.calc > button:hover {
+    background-color: blue;
+}
+
+
+
 
     .finish > button {
         color: #ffffff;
@@ -547,3 +567,299 @@ color: #000000;
     .hidden {
         display: none;
     }
+
+.box4-title{
+position: absolute;
+width: 209px;
+height: 44px;
+left: 165px;
+top: 1886px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+
+color: #004C93;
+
+    }
+
+    .Rectangle10{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 200px;
+        height: 264px;
+        left: 165px;
+        top: 1969px;
+        
+        border: 1px solid #004C93;
+        border-radius: 4px;
+    }
+
+    .inboxDifficult{
+        position: absolute;
+        width: 54.69px;
+        height: 120px;
+        left: 238px;
+        top: 1969px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 100%;
+        color: #004C93;
+    }
+    .box-Difficult{
+        position: absolute;
+        width: 175px;
+        height: 120px;
+        left: 178px;
+        top: 2113px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #2E4674;
+    }
+    .Rectangle11{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 200px;
+        height: 264px;
+        left: 392px;
+        top: 2101px;
+        
+        border: 1px solid #004C93;
+        border-radius: 4px;
+    }
+
+    .inboxDifficult2{
+        position: absolute;
+        width: 54.69px;
+        height: 120px;
+        left: 465px;
+        top: 2101px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 100%;
+        
+        color: #004C93;
+    }
+    .box-Difficult2{
+        position: absolute;
+        width: 175px;
+        height: 120px;
+        left: 405px;
+        top: 2245px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+         
+        color: #2E4674;
+    }
+
+    .Rectangle12{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 200px;
+        height: 264px;
+        left: 620px;
+        top: 1974px;
+        
+        border: 1px solid #004C93;
+        border-radius: 4px;
+    }
+
+    .inboxDifficult3{
+        position: absolute;
+        width: 54.69px;
+        height: 120px;
+        left: 693px;
+        top: 1974px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 100%;
+                
+        color: #004C93;
+    }
+    .box-Difficult3{
+        position: absolute;
+        width: 175px;
+        height: 120px;
+        left: 633px;
+        top: 2118px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+               
+        color: #2E4674;
+    }
+
+    .Rectangle13{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 200px;
+        height: 264px;
+        left: 848px;
+        top: 2106px;
+        
+        border: 1px solid #004C93;
+        border-radius: 4px;
+    }
+
+    .inboxDifficult4{
+        position: absolute;
+        width: 54.69px;
+        height: 120px;
+        left: 921px;
+        top: 2106px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 100%;       
+        
+        color: #004C93;
+    }
+    .box-Difficult4{
+        position: absolute;
+        width: 175px;
+        height: 120px;
+        left: 861px;
+        top: 2250px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+     
+        color: #2E4674;
+    }
+
+    .Rectangle14{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 200px;
+        height: 264px;
+        left: 1076px;
+        top: 1957px;
+        
+        border: 1px solid #004C93;
+        border-radius: 4px;
+    }
+
+    .inboxDifficult5{
+        position: absolute;
+        width: 54.69px;
+        height: 120px;
+        left: 1149px;
+        top: 1957px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 100%;
+              
+        color: #004C93;
+    }
+    .box-Difficult5{
+        position: absolute;
+        width: 175px;
+        height: 120px;
+        left: 1089px;
+        top: 2101px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;   
+        
+        color: #2E4674;
+    }
+
+    .box5-title{
+position: absolute;
+width: 220px;
+height: 44px;
+left: 165px;
+top: 2446px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+
+color: #004C93;
+}
+.moodpng {
+    position: absolute;
+width: 600px;
+height: 567px;
+left: 415px;
+top: 2500px;
+
+background: url(mood.png);
+}
+
+.footer {
+    position: absolute;
+width: 100%;
+height: 100px;
+left: 0px;
+top: 3140px;
+
+background: #004C93;
+}
+.footer-content {
+    position: absolute;
+    width: 200px;
+    height: 29px;
+    left: 165px;
+    top: 3175px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+
+}
+
+.footerVK {
+width: 32px;
+height: 32px;
+position: absolute;
+left: 1243px;
+top: 3174px;
+background: none;
+
+}
