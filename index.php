@@ -1,6 +1,23 @@
+<?php
+
+ $connection = mysqli_connect("localhost", "root", "", "test");
+ if (!$connection) {
+     die ("Связь не установлена: " .mysqli_connect_error());
+ }
+
+ $query = mysqli_query($connection, "SELECT * FROM `resul`");
+
+ $resul = [];
+
+ while ($row = mysqli_fetch_assoc($query)){
+        
+    $resul[] = $row;
+ }
+    ?>
+
 <html>
     <head>
-        <title>Калькулятор</title>
+    <title>Калькулятор</title>
     </head>
 <body>
     <form method="post">
@@ -14,6 +31,14 @@
         </select>
         <input type="submit" name="Вычисление" value="Вычисление">
     </form>
+
+<?php foreach ($resul as $result) { ?>
+    <div>
+        <span><?php echo $result["id"]; ?></span> 
+        <?php echo $result ["result"]; ?>
+</div>
+<?php }?>
+        
 </body>
 </html>
 
@@ -24,16 +49,20 @@
         $operation = $_POST ['op'];
 
         if ($operation == '+'){
-            echo $num1 + $num2;
+        echo $num1 + $num2;
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['op'] . "')");
         }else if ($operation == '-'){
-            echo $num1 - $num2;
+        echo $num1 - $num2;
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST ['op'] . "')");
         }else if ($operation == '/'){
         echo $num1 / $num2;
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST ['op'] . "')");
         }else if ($operation == '*')
         echo $num1 * $num2;
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST ['op'] . "')");
 
         }
-?>
 
+?>
 
     
