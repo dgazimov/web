@@ -29,7 +29,7 @@
             <option value="/">Деление</option>
             <option value="*">Умножение</option>
         </select>
-        <input type="submit" name="Вычисление" value="Вычисление">
+        <input type="submit" name="calculation" value="calculation">
     </form>
 
 <?php foreach ($resul as $result) { ?>
@@ -43,23 +43,23 @@
 </html>
 
 <?php 
-    if(isset($_POST['Вычисление'])){
+    if(isset($_POST['calculation'])){
         $num1 = $_POST ['num1'];
         $num2 = $_POST ['num2'];
         $operation = $_POST ['op'];
 
         if ($operation == '+'){
         echo $num1 + $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['op'] . "')");
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
         }else if ($operation == '-'){
         echo $num1 - $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST ['op'] . "')");
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
         }else if ($operation == '/'){
         echo $num1 / $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST ['op'] . "')");
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
         }else if ($operation == '*')
         echo $num1 * $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST ['op'] . "')");
+        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
 
         }
 
