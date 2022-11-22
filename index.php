@@ -5,7 +5,7 @@
      die ("Связь не установлена: " .mysqli_connect_error());
  }
 
- $query = mysqli_query($connection, "SELECT * FROM `resul`");
+ $query = mysqli_query($connection, "SELECT * FROM `resul` ORDER BY `id` DESC limit 7");
 
  $resul = [];
 
@@ -49,20 +49,21 @@
         $operation = $_POST ['op'];
 
         if ($operation == '+'){
-        echo $num1 + $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
+            $summa = $num1 + $num2;
+            echo $summa;
+            mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $summa . "')");
         }else if ($operation == '-'){
-        echo $num1 - $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
+            $summa = $num1 - $num2;
+            echo $summa;
+            mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $summa . "')");
         }else if ($operation == '/'){
-        echo $num1 / $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
-        }else if ($operation == '*')
-        echo $num1 * $num2;
-        mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $_REQUEST['calculation'] . "')");
-
+            $summa = $num1 / $num2;
+            echo $summa;
+            mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $summa . "')");
+        }else if ($operation == '*'){
+            $summa = $num1 * $num2;
+            echo $summa;
+            mysqli_query($connection, "INSERT INTO resul(result) VALUES ('" . $summa . "')");
         }
-
+    }
 ?>
-
-    
