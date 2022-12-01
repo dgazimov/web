@@ -14,7 +14,12 @@
         </select>
         <input type="submit" name="calculation" value="calculation">
     </form>
-
+    <?php if (!empty($summa)) { ?>
+            <div>     
+            <?php echo $summa; ?>
+            </div>
+    <?php } ?>
+                     
 </body>
 </html>
 
