@@ -58,7 +58,7 @@
         }else if ($operation == '*'){
             $summa = $num1 * $num2;
             echo $summa;
-            mysqli_query($connection, "INSERT INTO resul('result', 'num1', 'num2', 'op') VALUES ('$summa', '$num1', '$num2','$operation')");
+            mysqli_query($connection, "INSERT INTO `resul`(`result`, `num1`, `num2`, `op`) VALUES ('$summa','$num1','$num2','$operation')");
         }
     }
     foreach ($resul as $result) { ?>
